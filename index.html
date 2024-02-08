@@ -1,38 +1,651 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="ja">
+  <head prefix="og:https://ogp.me/ns#">
+    <meta property="og:url" content="https://uzuz-college.jp/biz-infra/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="タイトル" />
+    <meta property="og:description" content="ディスクリプション" />
+    <meta property="og:site_name" content="タイトル" />
+    <meta property="og:image" content="こちらに画像パスを記載ください" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タイトル</title>
+    <meta name="description" content="ディスクリプション">
+    <link rel="stylesheet" href="style.css" />
+    <script src="dist/app.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="relative text-primary font-semibold">
+      <!-- ヘッダー -->
+      <header class="w-1/2 px-10 absolute top-0 z-10 max-w-full pt-6 sm:pt-10 pl-5">
+        <img src="img/logo_lp.svg" class="sm:w-[180px] md:w-[200px] lg:w-[290px]" alt="">
+      </header>
+      <main>
+        <!-- FV -->
+        <section class="relative">
+          <div class="sm:flex">
+            <div class="relative sm:hidden">
+              <img src="img/text.svg" class="absolute top-14 left-1/2 transform -translate-x-1/2" alt="">
+              <img src="img/mv02_sp.png" class="sm:hidden w-screen object-cover" alt="" />
+              <img src="img/price.svg" class="sm:hidden w-[114px] absolute bottom-5 right-5" alt="">
+            </div>
+            <div class="sm:w-1/2 px-5 sm:px-10 py-10 sm:py-20 lg:py-28 flex flex-col items-center justify-center">
+              <div class="flex flex-col items-center sm:items-start">
+                <h1 class=""><img src="img/mv.svg" class="hidden md:block" alt=""></h1>
+                <h1 class=""><img src="img/mv-sp.svg" class="md:hidden" alt=""></h1>
+                <a href="https://uzuz-college.jp/contact-biz/" target="_blank">
+                  <button class="w-full w-[350px] mt-8 md:mt-10 lg:mt-14 py-6 pl-20 pr-5 flex items-center justify-between bg-gradient-to-r from-blue to-blue-second rounded-full">
+                    <p class="text-white text-xl">料金表ダウンロード</p>
+                    <img src="img/arrow.svg" alt="">
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="w-1/2 hidden sm:block">
+              <img src="img/mv02.png" class="w-screen h-full object-cover" alt="" />
+            </div>
+            <img src="img/price.svg" class="hidden sm:block sm:w-[180px] lg:w-[228px] absolute bottom-16 right-20" alt="">
+          </div>
+        </section>
+        <!-- サービス -->
+        <section class="bg-gradient-to-r from-blue to-blue-second text-white">
+          <div class="max-w-6xl mx-auto px-5 py-16 md:py-20 flex flex-col items-center">
+            <h2 class="mb-10 md:mb-14 flex flex-col items-center">
+              <p class="font-second font-bold italic">Our Service</p>
+              <p class="mt-2 text-2xl sm:text-3xl text-center leading-relaxed sm:leading-relaxed">「ウズカレBiz」は<br>SES事業者のための新入社員<br class="sm:hidden">向け<br class="hidden sm:block">インフラエンジニア<br class="sm:hidden">研修サービスです</p>
+            </h2>
+            <div class="flex flex-col sm:flex-row gap-7 items-center text-center">
+              <div class="py-10 px-16 sm:px-10 lg:px-16 bg-white flex flex-col gap-3 items-center">
+                <p class="font-second font-bold italic text-secondary">Point 01</p>
+                <img src="img/point01.svg" class="w-[158px]" alt="">
+                <p class="text-xl text-primary">リアルタイムの<br><span class="text-secondary">オンライン研修</span></p>
+              </div>
+              <div class="py-10 px-16 sm:px-10 lg:px-16 bg-white flex flex-col gap-3 items-center">
+                <p class="font-second font-bold italic text-secondary">Point 02</p>
+                <img src="img/point02.svg" class="w-[158px]" alt="">
+                <p class="text-xl text-primary">社労士1名が<span class="text-secondary">無料で<br>助成金申請</span>を代行</p>
+              </div>
+              <div class="py-10 px-16 sm:px-10 lg:px-16 bg-white flex flex-col gap-3 items-center">
+                <p class="font-second font-bold italic text-secondary">Point 03</p>
+                <img src="img/point03.svg" class="w-[158px]" alt="">
+                <p class="text-xl text-primary">講習後6ヶ月以内の<br><span class="text-secondary">離職率3%未満</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 悩み -->
+        <section class="bg-blue-third">
+          <div class="max-w-6xl mx-auto px-5 py-16 flex flex-col items-center">
+            <h2 class="mb-10 md:mb-14 flex flex-col items-center">
+              <div class="p-0.5 bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                <p class="font-second font-bold italic">Problem</p>
+              </div>
+              <p class="mt-2 text-2xl sm:text-3xl text-center  leading-relaxed sm:leading-relaxed">SES事業者様、<br class="md:hidden">こんなお悩みはありませんか？</p>
+            </h2>
+            <div class="flex flex-col sm:flex-row gap-7 text-center text-base md:text-xl">
+              <div class="px-10 flex flex-col items-center gap-5">
+                <img src="img/problem01.svg" alt="">
+                <p class="">新入社員の<span class="text-secondary">立ち上がりが遅く<br></span>稼働率が低い…</p>
+              </div>
+              <div class="px-10 flex flex-col items-center gap-5">
+                <img src="img/problem02.svg" alt="">
+                <p class="">新入社員研修の<span class="text-secondary"><br>外注コストが高額</span></p>
+              </div>
+              <div class="px-10 flex flex-col items-center gap-5">
+                <img src="img/problem03.svg" alt="">
+                <p class="">新入社員が<br><span class="text-secondary">短期離職</span>してしまう</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ウズカレbizなら -->
+        <section class="relative flex justify-center items-center">
+          <img src="img/bg.png" class="absolute -z-10 w-full h-full object-cover" alt="">
+          <div class="max-w-7xl bg-white my-10 md:my-24 mx-5 sm:mx-10 lg:mx-20 py-10 md:py-16 px-8 sm:px-16 lg:px-24 flex flex-col lg:flex-row justify-between">
+            <div class="flex flex-col items-center lg:items-start">
+              <p class="mb-3 text-xl sm:text-2xl tracking-tighter">ウズカレBizの<br class="sm:hidden xl:block">インフラエンジニア研修なら…</p>
+              <p class="mb-6 text-3xl xl:text-5xl leading-normal xl:leading-normal"><span class="text-secondary">1ヶ月</span>で<span class="text-secondary">安価</span>に<br class="sm:hidden lg:block">新入社員が客先で<br>稼働できるレベルに<br class="sm:hidden lg:block">到達します。</p>
+              <img src="img/merit-sp.svg" class="lg:hidden mb-6" alt="">
+              <p class="text-xl sm:text-2xl tracking-tighter">さらに、<span class="text-secondary">短期離職も減らす</span>ことが<br class="hidden xl:block">できます。</p>
+            </div>
+            <div class="flex  justify-center">
+              <img src="img/merit.svg" class="hidden lg:block lg:w-full" alt="">
+              <img src="img/merit2-sp.svg" class="lg:hidden mt-2" alt="">
+            </div>
+          </div>
+        </section>
+        <!-- 理由 -->
+        <section class="bg-gradient-to-r from-blue to-blue-second ">
+          <div class="max-w-5xl mx-auto px-5 py-16 md:py-20 flex flex-col items-center">
+            <div class="">
+              <h2 class="mb-10 md:mb-14 flex flex-col items-center text-white">
+                <p class="font-second font-bold italic">Reasons</p>
+                <p class="mt-2 text-2xl sm:text-3xl text-center leading-relaxed sm:leading-relaxed">SES企業の新入社員研修に<br>ウズカレBizが選ばれる理由</p>
+              </h2>
+            </div>
+            <div class="mb-10 md:mb-16">
+              <div class="flex flex-col md:flex-row text-white">
+                <div class="max-w-lg mb-5 md:mb-0 md:mr-20 lg:mr-24">
+                  <h3 class="mb-5">
+                    <p class="font-second font-bold text-3xl md:text-5xl italic">Reason 1</p>
+                    <p class="text-xl md:text-2xl mt-5 mb-5 md:mb-0 leading-normal md:leading-normal">新入社員が1ヶ月で客先稼動！<br>圧倒的な立ち上がりスピード</p>
+                    <img src="img/reason1.png" class="w-full md:w-[404px] object-cover md:hidden" alt="">
+                  </h3>
+                  <p class="font-normal text-sm md:text-base">ウズカレBizのインフラエンジニア研修では、1ヶ月でCCNA・LinuCレベル1取得レベル、つまり客先で稼働できるレベルに到達することができます。<br class="md:hidden">というのも、、、</p>
+                </div>
+                <img src="img/reason1.png" class="w-full md:w-[404px] object-cover hidden md:block" alt="">
+              </div>
+              <div class="bg-white py-10 md:py-14 px-5 lg:px-24 mt-7 flex flex-col gap-10 md:gap-16">
+                <div class="flex flex-col gap-7">
+                  <p class="text-lg md:text-2xl text-center tracking-tight">私たちは12年間で<span class="text-secondary">合計2440人の<br class="md:hidden">未経験者</span>を<br class="hidden sm:block">インフラエンジニアとして<span class="text-secondary">就業決定</span>してきました</p>
+                  <div class="flex flex-col md:flex-row gap-7 md:gap-10">
+                    <img src="img/uzuz.png" class="w-full md:w-[204px] object-cover" alt="">
+                    <p class="text-sm font-normal leading-relaxed">私たちUZUZは12年前に人材紹介会社として創業し、12年間で合計2440人の無資格・未経験の方々をインフラエンジニアとしてSES企業に就業決定してきました。<br><br>その就業決定数は、日本に約3万社近くあると言われる人材紹介会社の中でもトップクラスの実績です。<br><br>インフラエンジニアの就業決定数が日本トップクラスになれた理由は、<br><strong>無資格・未経験の方に対する「研修力」</strong>です。</p>
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-7 md:gap-10 items-center">
+                  <div class="flex flex-col gap-6">
+                    <p class="text-lg sm:text-xl text-center md:text-start">就業後6ヶ月以内の<span class="text-secondary">離職率3%未満</span></p>
+                    <img src="img/leave.png" class="w-full md:w-[296px] object-scale-down md:hidden" alt="">
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="max-w-7xl mx-auto p-5 flex justify-between bg-gray-400">
-            <div>
-                <p>サイト名</p>
-                <img src="/img/logo.svg" alt="">
+                    <div class="flex flex-col gap-5">
+                      <p class="font-normal text-sm">特筆すべきは、研修を受講した方々の就業後の短期離職率の低さにあります。<br><br>SES事業者によくある悩みとして、人手不足のためスキルが伴っていない新人を未教育のまま案件にアサインしたところ、業務に適応できず疲弊し、短期離職してしまうケースが多いですよね。<br><br>しかし、この研修を受けてから配属された方々は、<strong>十分な知識を身に着けた上で客先で稼働する</strong>ため、しっかりと業務に適応することができ、短期離職をすることがほとんどなく、<strong>6ヶ月以内の離職率はわずか3%未満</strong><span class="text-[10px]">(※)</span>。<br><br>しかも、就業した方々が私たちの<strong>研修を受講していたのはわずか1ヶ月</strong>です。</p>
+                      <p class="text-[10px] font-normal">※…2012年～2023年実績（調査対象：インフラエンジニアとして就業決定した2440名）</p>
+                    </div>
+                  </div>
+                  <img src="img/leave.png" class="w-full md:w-[296px] object-scale-down order-first md:order-last hidden md:block" alt="">
+                </div>
+                <div class="flex flex-col md:flex-row gap-7 md:gap-10 items-center">
+                  <div class="flex flex-col gap-6">
+                    <p class="text-lg sm:text-xl text-center md:text-start tracking-[-0.15em] sm:tracking-tight"><span class="text-secondary">インフラエンジニア育成ノウハウの集大成</span><br>「インフラエンジニア育成コース」</p>
+                    <img src="img/course.png" class="w-full md:w-[296px] object-scale-down md:hidden" alt="">
+                    <p class="font-normal text-sm">その研修ノウハウを惜しみなく提供しているのが<br>この「インフラエンジニア育成コース」です。<br><br>この研修を導入して1ヶ月経つ頃、新入社員の方々は、CCNAやLinucレベル1取得レベルに到達し、<strong>すぐにでも客先で稼働できる状態</strong>になっているでしょう。</p>
+                  </div>
+                  <img src="img/course.png" class="w-full md:w-[296px] object-scale-down order-first hidden md:block" alt="">
+                </div>
+              </div>
+              <div class="border-[0.5px] border-white mt-10 md:mt-16"></div>
             </div>
-            <div class="bg-primary flex justify-center items-center">
-                <p>お問い合わせ</p>
+            <div class="mb-10 md:mb-16">
+              <div class="flex flex-col md:flex-row text-white">
+                <div class="max-w-lg mb-5 md:mb-0 md:mr-20 lg:mr-24">
+                  <h3 class="mb-5">
+                    <p class="font-second font-bold text-3xl md:text-5xl italic">Reason 2</p>
+                    <p class="text-xl md:text-2xl mt-5 mb-5 md:mb-0 leading-normal md:leading-normal">社労士1名が無料で助成金申請を<br>代行（丸投げOK）</p>
+                    <img src="img/reason2.png" class="w-full md:w-[404px] object-cover md:hidden" alt="">
+                  </h3>
+                  <p class="font-normal text-sm md:text-base">無料で社労士1名が、助成金の申請を代行します。<br>書類作成や労働局への手続きなどの面倒な作業はお任せください。</p>
+                </div>
+                <img src="img/reason2.png" class="w-full md:w-[404px] object-cover hidden md:block" alt="">
+              </div>
+              <div class="bg-white py-10 md:py-14 px-5 lg:px-24 mt-7 flex flex-col gap-10 md:gap-16">
+                <div class="flex flex-col md:flex-row gap-7 md:gap-10 items-center">
+                  <div class="flex flex-col gap-6">
+                    <p class="text-lg sm:text-xl text-center md:text-start leading-relaxed md:leading-relaxed">助成金の利用で研修コストは<br class="md:hidden"><span class="text-secondary">最大85%オフ</span></p>
+                    <img src="img/cost.svg" class="w-full md:w-[296px] object-scale-down md:hidden" alt="">
+                    <p class="font-normal text-sm leading-relaxed">SES事業者が新入社員の研修を外部に委託する時、ネックとなるのはその費用。<br><br>インフラエンジニア研修にかかる費用相場は1名あたり50万～80万円程度と言われています（10人受講すると500万円以上です！）<br><br>この費用を抑えるための仕組みが、<strong>厚生労働省の「人材開発支援助成金」</strong>。<br><br>助成金を利用することで、研修コストの最大85％の返還を受けることができます。</p>
+                  </div>
+                  <img src="img/cost.svg" class="w-full md:w-[296px] object-scale-down order-first md:order-last hidden md:block" alt="">
+                </div>
+                <div class="flex flex-col md:flex-row gap-7 md:gap-10 items-center">
+                  <div class="flex flex-col gap-6">
+                    <p class="text-lg sm:text-xl text-center md:text-start leading-relaxed md:leading-relaxed">申請時に必要な社労士費用は<br class="md:hidden"><span class="text-secondary">ウズカレBizが全額負担</span>！</p>
+                    <div class="flex flex-col md:flex-row gap-7">
+                      <p class="md:w-1/2 font-normal text-sm leading-relaxed">助成金を利用する際に問題になるのが申請手続きの煩雑さです。<br>正しく申請しないと申請が通らず不支給となることがあるため、社労士に助成金申請を依頼するのが一般的です。<br><br>社労士に助成金申請を代行してもらう場合、費用相場は「助成金取得額の20%～」になります。<br>例えば、貴社が研修サービスを外部に委託し、50万円の助成金を取得した場合、受給金額の20%である10万円を報酬として社労士に支払わなければなりません。<br><br>ウズカレBizなら、この<strong>社労士による「助成金申請代行」を無料で貴社へ提供</strong>します。</p>
+                      <p class="md:w-1/2 font-normal text-sm leading-relaxed">一般的に「助成金申請をサポートします」と謳っているサービスの多くは、事業者自身が申請手続きをすることを前提としているため、メールや電話で不明点を質問したら答えが返ってくる、といった程度で、申請の代行までは対応してくれないケースがほとんどです。<br><br>しかしウズカレBizは、専属の社労士を貴社のために手配し、申請まで無料で代行します。<br><br>貴社は社労士への依頼費用がかからないだけでなく、<strong>申請に必要な手間も最小限に</strong>抑えることができます。</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="border-[0.5px] border-white mt-10 md:mt-16"></div>
             </div>
+            <div class="">
+              <div class="flex flex-col md:flex-row text-white">
+                <div class="max-w-lg mb-5 md:mb-0 md:mr-20 lg:mr-24">
+                  <h3 class="mb-5">
+                    <p class="font-second font-bold text-3xl md:text-5xl italic">Reason 3</p>
+                    <p class="text-xl md:text-2xl mt-5 mb-5 md:mb-0 leading-normal md:leading-normal">受講者が1名でも受講料は4.2万円～！<br>さらに毎月受講OK</p>
+                    <img src="img/reason3.png" class="max-h-[266px] w-full md:w-[404px] object-cover md:hidden" alt="">
+                  </h3>
+                  <p class="font-normal text-sm md:text-base leading-relaxed md:leading-relaxed">一般的なエンジニア研修サービスはリアルタイムで実施される形式の場合、グループ研修が基本となるため、受講者が少数になると１人あたりの受講料が高額になってしまいます。<br><br>しかし、ウズカレBizは受講者1名でも、<br>一人あたりの受講料は4.2万円～(※助成金利用時)です。<br><br>インフラエンジニア育成コースは毎月開講していますので、新入社員が入社されたタイミングで何度でも研修を受講することができます。</p>
+                </div>
+                <img src="img/reason3.png" class="max-h-[266px] w-full md:w-[404px] object-cover hidden md:block" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 高収益体質 -->
+        <section class="relative text-white">
+          <img src="img/bg02.png" class="hidden md:block w-full h-full object-cover" alt="">
+          <img src="img/bg02-sp.png" class="md:hidden max-h-[680px] w-full h-full object-cover" alt="">
+          <div class="absolute inset-0 z-10 px-5 flex flex-col gap-10 justify-center items-center">
+            <h2 class="text-xl md:text-3xl text-center leading-relaxed md:leading-relaxed">新入社員の立ち上がりスピードが<br class="md:hidden">早ければ早いほど<br class="hidden md:block">SES事業者は<br class="md:hidden">高収益体質になります</h2>
+            <p class="max-w-[620px] mx-auto text-sm md:text-base font-normal leading-relaxed md:leading-relaxed">一般的に未経験・無資格のインフラエンジニアが入社後に十分な知識を身に着けて稼働できるようになるまでの期間は平均3ヶ月と言われています。<br><br>新入社員の月給が23万円の場合、稼働までに3ヶ月かかるとしたら、<br>23万円×3ヶ月=69万円分のコスト（+育成コスト）がかかります。<br>これが1ヶ月で稼働できるようになれば、2ヶ月分のコスト削減（1名あたり-46万円）ができます。<br>研修を受ける社員が10名の場合、<strong>約-460万円分のコスト削減</strong>ができます。<br><br><strong>新入社員の稼働までのスピードが早ければ早いほどSES事業者は高収益体質になります</strong>ので、新入社員がわずか1ヶ月で客先で稼働できる状態になる“立ち上がりスピードの早さ”こそが、SES企業の新入社員研修にウズカレBizが選ばれる一番の理由です。</p>
+          </div>
+        </section>
+        <!-- CTA -->
+        <section class="relative bg-gradient-to-r from-blue to-blue-second">
+          <div class="flex flex-col items-center">
+            <img src="img/kantan.svg" class="hidden sm:block absolute top-12 sm:right-20 lg:right-40 xl:right-80" alt="">
+            <div class="max-w-xl mx-auto px-4 py-16 flex flex-col items-center">
+              <img src="img/kantan.svg" class="sm:hidden mb-5" alt="">
+              <h2 class="mb-8 flex flex-col items-center text-white">
+                <p class="font-second font-bold italic opacity-50">Download</p>
+                <p class="mt-2 text-2xl sm:text-3xl text-center leading-relaxed sm:leading-relaxed tracking-tighter">まずは料金の詳細をダウンロード</p>
+              </h2>
+              <div class="flex flex-col gap-7 items-center">
+                <a href="https://uzuz-college.jp/contact-biz/" target="_blank">
+                  <button class="w-full w-[350px] py-6 pl-20 pr-5 flex items-center justify-between bg-white rounded-full">
+                    <p class="text-secondary text-xl">料金表ダウンロード</p>
+                    <img src="img/arrow2.svg" alt="">
+                  </button>
+                </a>
+                <p class="font-normal text-sm md:text-base text-white text-center">※フォーム送信後、登録メールアドレスへ<br class="md:hidden">「料金表URL」が送信されます</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- カリキュラム概要 -->
+        <section class="bg-white">
+          <div class="max-w-7xl mx-auto px-5 py-16 flex flex-col items-center">
+            <h2 class="mb-10 md:mb-14 flex flex-col items-center">
+              <div class="p-0.5 bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                <p class="font-second font-bold italic">Curriculum Overview</p>
+              </div>
+              <p class="mt-2 text-2xl sm:text-3xl text-center  leading-relaxed sm:leading-relaxed">インフラエンジニア育成コース<br>カリキュラム概要</p>
+              <p class="mt-5 md:mt-7 text-sm md:text-base font-normal text-center leading-relaxed md:leading-relaxed">この研修では、ネットワーク・サーバー分野の基礎知識を学びつつ、CCNA・LinuCの試験範囲を履修します。<br><strong>研修はすべてリアルタイムのオンライン研修です。</strong></p>
+            </h2>
+            <div class="flex flex-col md:flex-row md:grid grid-cols-4 gap-7">
+              <div class="flex flex-col items-start gap-4">
+                <img src="img/no1.png" class="w-full hidden md:block" alt="">
+                <div class="flex flex-col gap-1">
+                  <div class="bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                    <p class="font-second font-bold italic">No.1</p>
+                  </div>
+                  <p class="text-lg sm:text-xl">ネットワーク（CCNA）</p>
+                </div>
+                <img src="img/no1.png" class="w-full md:hidden" alt="">
+                <ul class="text-xs font-normal flex flex-wrap gap-2 tracking-tighter">
+                  <li class="py-0.5 px-2 border border-gray rounded-full">ネットワーク基礎</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">Ciscoルータ初期設定</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">ルーティング基礎</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">スタティックルーティング</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">OSPF</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">ACL</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">NAT・DHCP・DNSなど</li>
+                </ul>
+              </div>
+              <div class="flex flex-col items-start gap-4">
+                <img src="img/no2.png" class="w-full hidden md:block" alt="">
+                <div class="flex flex-col gap-1">
+                  <div class="bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                    <p class="font-second font-bold italic">No.2</p>
+                  </div>
+                  <p class="text-lg sm:text-xl">サーバ（LinuC）</p>
+                </div>
+                <img src="img/no2.png" class="w-full md:hidden" alt="">
+                <ul class="text-xs font-normal flex flex-wrap gap-2 tracking-tighter">
+                  <li class="py-0.5 px-2 border border-gray rounded-full">サーバとは</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">システムアーキテクチャ</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">仮想環境の構築</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">Cent OSのダウンロード設定</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">Linuxのインストールとパッケージ管理など</li>
+                </ul>
+              </div>
+              <div class="flex flex-col items-start gap-4">
+                <img src="img/no3.png" class="w-full hidden md:block" alt="">
+                <div class="flex flex-col gap-1">
+                  <div class="bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                    <p class="font-second font-bold italic">No.3</p>
+                  </div>
+                  <p class="text-lg sm:text-xl">ITリテラシー</p>
+                </div>
+                <img src="img/no3.png" class="w-full md:hidden" alt="">
+                <ul class="text-xs font-normal flex flex-wrap gap-2 tracking-tighter">
+                  <li class="py-0.5 px-2 border border-gray rounded-full">IT業界やITキャリアの理解</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">セキュリティ</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">運用オペレーションなど</li>
+                </ul>
+              </div>
+              <div class="flex flex-col items-start gap-4">
+                <img src="img/no4.png" class="w-full hidden md:block" alt="">
+                <div class="flex flex-col gap-1">
+                  <div class="bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                    <p class="font-second font-bold italic">No.4</p>
+                  </div>
+                  <p class="text-lg sm:text-xl">ビジネススキル</p>
+                </div>
+                <img src="img/no4.png" class="w-full md:hidden" alt="">
+                <ul class="text-xs font-normal flex flex-wrap gap-2 tracking-tighter">
+                  <li class="py-0.5 px-2 border border-gray rounded-full">Word</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">Excel</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">PowerPoint</li>
+                  <li class="py-0.5 px-2 border border-gray rounded-full">Google Workspaceなど</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="max-w-4xl w-full mt-16 md:mt-10 flex flex-col items-center">
+              <p class="bg-white py-1 px-2.5 text-secondary -mb-4 z-10">研修用途</p>
+              <p class="w-full border-2 border-secondary py-5 px-2.5 text-center">新入社員として入社したインフラエンジニア向け現場配属研修・資格取得研修</p>
+            </div>
+            <p class="text-xs text-center mt-5 font-normal">※CCNAもしくはLinuCレベル1のどちらかに注力した<br class="md:hidden">カリキュラムとなります</p>
+          </div>
+        </section>
+        <!-- 特長 -->
+        <section class="bg-gradient-to-r from-blue to-blue-second ">
+          <div class="py-16 md:py-20">
+            <div class="max-w-5xl mx-auto flex flex-col items-center px-5">
+              <h2 class="mb-10 md:mb-14 flex flex-col items-center text-white">
+                <p class="font-second font-bold italic">Features</p>
+                <p class="mt-2 text-2xl sm:text-3xl text-center leading-relaxed sm:leading-relaxed tracking-tighter">インフラエンジニア育成コースの特長</p>
+              </h2>
+            </div>
+            <div class="flex flex-col gap-10 md:gap-32">
+              <div class="max-w-[1354px] flex flex-col md:flex-row items-center mx-5 md:mx-0">
+                <img src="img/feature1.png" class="md:w-[500px] xl:w-[700px] max-h-[380px] object-cover hidden md:block" alt="">
+                <div class="md:mx-7 xl:ml-28 md:mb-0 text-white">
+                  <h3 class="mb-5">
+                    <p class="font-second font-bold text-3xl md:text-5xl italic">Feature 1</p>
+                    <p class="text-xl md:text-2xl mt-5 mb-5 md:mb-0 leading-normal md:leading-normal">講義動画はいつでも視聴可能</p>
+                    <img src="img/feature1.png" class="md:w-[500px] xl:w-[700px] max-h-[380px] object-cover md:hidden" alt="">
+                  </h3>
+                  <p class="font-normal text-sm md:text-base">講師による講義を補完するために、主要講義はすべて動画コンテンツ化しています。<br><br>動画はいつでも視聴ができますので、講義内容を復習したい時にスマホひとつで再学習することができます。<br>研修を欠席した際の補習教材としても利用可能です。<br><br>動画コンテンツはこれまでに5万人以上が視聴し、<br>受講満足度は5点満点中4.4以上となっています。</p>
+                </div>
+              </div>
+              <div class="max-w-[1354px] flex flex-col md:flex-row md:ml-auto md:mr-0 items-center mx-5 md:mx-0">
+                <img src="img/feature2.png" class="md:w-[500px] xl:w-[700px] max-h-[380px] object-cover order-first md:order-last hidden md:block" alt="">
+                <div class="mt-5 md:mx-7 xl:mr-28 md:mb-0 text-white">
+                  <h3 class="mb-5">
+                    <p class="font-second font-bold text-3xl md:text-5xl italic">Feature 2</p>
+                    <p class="text-xl md:text-2xl mt-5 mb-5 md:mb-0  leading-normal md:leading-normal">eラーニングによる徹底的な試験対策</p>
+                    <img src="img/feature2.png" class="md:w-[500px] xl:w-[700px] max-h-[380px] object-cover md:hidden" alt="">
+                  </h3>
+                  <p class="font-normal text-sm md:text-base">研修で使用した講義動画、演習問題はすべてeラーニングに格納されており、試験対策として活用できます。<br><br>CCNA、LinuC レベル1（LPIC）、ITパスポートといったIT専門資格を中心に、試験対策にもなる演習問題が数千問用意されています。<br><br>さらに、eラーニングの学習動画は研修修了後も視聴ができるため、研修後の試験対策に活用するなど長期間に渡って学習をすることができます。</p>
+                </div>
+              </div>
+              <div class="max-w-[1354px] flex flex-col md:flex-row items-center mx-5 md:mx-0">
+                <img src="img/feature3.png" class="md:w-[500px] xl:w-[700px] max-h-[380px] object-cover hidden md:block" alt="">
+                <div class="mt-5 md:mx-7 xl:ml-28 md:mb-0 text-white">
+                  <h3 class="mb-5">
+                    <p class="font-second font-bold text-3xl md:text-5xl italic">Feature 3</p>
+                    <p class="text-xl md:text-2xl mt-5 mb-5 md:mb-0  leading-normal md:leading-normal">管理者アカウントで学習履歴の確認が可能</p>
+                    <img src="img/feature3.png" class="md:w-[500px] xl:w-[700px] max-h-[380px] object-cover md:hidden" alt="">
+                  </h3>
+                  <p class="font-normal text-sm md:text-base">eラーニングシステムでは、受講者がしっかりと学習を進められているかを確認できる、研修管理者向けアカウントを利用できます。<br><br>管理者アカウントでは、演習問題の学習履歴・正答率・視聴時間などのデータを閲覧することができるため、受講者ごとの学習進捗を確認することができます。。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 講師 -->
+        <section class="bg-white">
+          <div class="max-w-6xl mx-auto px-5 py-16 flex flex-col items-center">
+              <h2 class="mb-10 md:mb-14 flex flex-col items-center">
+                <div class="p-0.5 bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                  <p class="font-second font-bold italic">Instructor</p>
+                </div>
+                <p class="mt-2 text-2xl sm:text-3xl text-center  leading-relaxed sm:leading-relaxed">代表講師紹介</p>
+                <p class="mt-5 md:mt-7 text-sm md:text-base font-normal text-center leading-relaxed md:leading-relaxed">ウズカレBizのインフラエンジニア研修は、<br><strong>Amazon のCCNA/CCNP/CCIE 関連 書籍部門で第1位</strong>(2024年2月時点)の<br>ベストセラー著者でもある浦川晃氏による監修のもと運営されています。</p>
+              </h2>
+              <div class="flex flex-col md:flex-row gap-7">
+                <div class="flex flex-col items-center gap-5 md:w-1/4">
+                  <img src="img/urakawa.png" class="w-[296px] object-scale-down" alt="">
+                  <div class="flex flex-col items-center ">
+                    <div class="bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                      <p class="font-second font-bold italic text-sm">Kou Urakawa</p>
+                    </div>
+                    <p class="text-3xl">浦川 晃</p>
+                  </div>
+                </div>
+                <div class="flex flex-col md:w-3/4">
+                  <div class="bg-blue-third flex flex-col gap-5 ">
+                    <div class="py-7 px-7 md:px-10 flex flex-col gap-3">
+                      <p class="text-2xl text-secondary">略歴</p>
+                      <p class="text-sm font-normal">ネットワーク構築の現場を経験後、主にCCNA、LPIC、Azureといったネットワークやサーバ、<br class="hidden md:block">クラウドの担当講師を務め、<br>資格取得率9割以上、満足度98％を誇る。<br><br>著書である「CCNA 完全合格テキスト＆問題集」は<br class="hidden md:block">Amazon のCCNA/CCNP/CCIE 関連書籍部門で第1位の販売数を獲得（2024年2月時点）。<br><br>「難しいことを易しく」をモットーに、難しいIT用語を日常生活などに例える講義は、<br class="hidden md:block">特に、業界未経験・PCスキルがゼロに近い生徒に圧倒的な支持を得ている。</p>
+                      <p class="text-sm font-normal"><strong class="mr-3">担当科目</strong>CCNA、CCNP、LPIC、Azureなど</p>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3 items-center mt-5">
+                    <div class="flex gap-2.5">
+                      <img src="img/rank.svg" alt="">
+                      <p class="">Amazon 売れ筋ランキング 1位獲得</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-10">
+                      <div class="flex gap-5">
+                        <img src="img/book.png" class="w-[60px] object-scale-down" alt="">
+                        <p class="text-sm font-normal leading-loose">著書：シスコ技術者認定教科書<br>CCNA 完全合格テキスト＆問題集<br>［対応試験］200-301</p>
+                      </div>
+                      <img src="img/amazon.png" class="w-[335px] object-scale-down" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!-- CTA -->
+        <section class="relative bg-gradient-to-r from-blue to-blue-second">
+          <div class="flex flex-col items-center">
+            <img src="img/kantan.svg" class="hidden sm:block absolute top-12 sm:right-20 lg:right-40 xl:right-80" alt="">
+            <div class="max-w-xl mx-auto px-4 py-16 flex flex-col items-center">
+              <img src="img/kantan.svg" class="sm:hidden mb-5" alt="">
+              <h2 class="mb-8 flex flex-col items-center text-white">
+                <p class="font-second font-bold italic opacity-50">Download</p>
+                <p class="mt-2 text-2xl sm:text-3xl text-center leading-relaxed sm:leading-relaxed tracking-tighter">まずは料金の詳細をダウンロード</p>
+              </h2>
+              <div class="flex flex-col gap-7 items-center">
+                <a href="https://uzuz-college.jp/contact-biz/" target="_blank">
+                  <button class="w-full w-[350px] py-6 pl-20 pr-5 flex items-center justify-between bg-white rounded-full">
+                    <p class="text-secondary text-xl">料金表ダウンロード</p>
+                    <img src="img/arrow2.svg" alt="">
+                  </button>
+                </a>
+                <p class="font-normal text-sm md:text-base text-white text-center">※フォーム送信後、登録メールアドレスへ<br class="md:hidden">「料金表URL」が送信されます</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 事例紹介 -->
+        <section class="relative bg-white">
+          <img src="img/bg3.svg" class="absolute bottom-0 w-full object-cover" alt="">
+          <div class="max-w-6xl mx-auto px-5 py-16">
+              <h2 class="mb-10 md:mb-14 flex flex-col items-center">
+                <div class="p-0.5 bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                  <p class="font-second font-bold italic">Case Study</p>
+                </div>
+                <p class="mt-2 text-2xl sm:text-3xl text-center  leading-relaxed sm:leading-relaxed">事例紹介</p>
+              </h2>
+              <div class="flex flex-col md:flex-row gap-7 items-center justify-center">
+                <div class="case relative md:w-1/2 flex flex-col gap-6 py-14 px-7 md:px-14 bg-white drop-shadow-[0_10px_10px_rgba(0,0,0,0.08)]">
+                  <img src="img/quote.svg" class="absolute z-10 top-2.5 right-2.5 md:top-10 md:right-10" alt="">
+                  <p class="text-2xl leading-relaxed"><span class="text-secondary">7~8割</span>の受講社員が<br class="hidden md:block">資格を取得することができました</p>
+                  <p class="text-sm font-normal leading-relaxed">インフラエンジニアとして入社した新入社員向けに「ネットワーククラス」と「サーバークラス」に分けて、1ヶ月間の研修を行ってもらいました。<br>配属後に必須となるITインフラ関連スキルはもちろん、チャットやクラウド環境の操作にも慣れてもらえるため、現場配属後の立ち上がりが早い印象を持ちました。<br>また、アバターを操作して受講するメタバース形式での集合研修のため、自宅からも受講できるだけでなく、オンライン特有の「画面見ているだけ」状態も解消できました。<br>講義動画はすべて動画化されているので、配属後も資格取得などの学習が可能となり、7~8割の受講社員が資格を取得することができました。</p>
+                  <div class="flex flex-col gap-3">
+                    <img src="img/logo_akkodis.svg" class="w-[108px] object-scale-down" alt="">
+                    <p class="">AKKODiSコンサルティング様</p>
+                  </div>
+                </div>
+                <div class="case relative md:w-1/2 flex flex-col gap-6 py-14 px-7 md:px-14 bg-white drop-shadow-[0_10px_10px_rgba(0,0,0,0.08)]">
+                  <img src="img/quote.svg" class="absolute z-10 top-2.5 right-2.5 md:top-10 md:right-10" alt="">
+                  <p class="text-2xl leading-relaxed">入社後の<span class="text-secondary">タイムラグも少なく</span><br class="hidden md:block">すぐに稼働させることができています</p>
+                  <p class="mb-6 text-sm font-normal leading-relaxed">IT研修を採用支援と組み合わせたハイブリッドサービスを提供いただいています。（「SODATEC」という研修型採用プログラムとして活用）<br>また、研修で使用している教材をeラーニング形式で提供してもらっているので、入社後の資格取得にも活用できています。<br>9日間のITインフラに関連した研修を実施した受講生を採用選考につなげることで、面接だけではわからない「適性」や研修を完遂した「就業意欲」を測ることができ、メリットを感じています。また、基礎研修が選考段階で完了しているので、入社後の配属にかかるタイムラグも少なく、すぐに稼働させることができて助かっています。</p>
+                  <div class="flex flex-col gap-3">
+                    <img src="img/logo_manpower.svg" class="w-[140px] object-scale-down" alt="">
+                    <p class="">マンパワーグループ様</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!-- CTA2 -->
+        <section class="relative bg-gradient-to-r from-blue to-blue-second">
+          <div class="flex flex-col text-white">
+            <div class="max-w-5xl mx-auto px-4 py-16 flex flex-col md:flex-row md:gap-32 justify-center items-end">
+              <div class="mb-7">
+                <h2 class="mb-8 flex flex-col items-center md:items-start">
+                  <p class="font-second font-bold italic opacity-50">Download</p>
+                  <p class="mt-2 text-2xl sm:text-3xl text-center md:text-start leading-relaxed sm:leading-relaxed tracking-tighter">インフラエンジニア育成コースは<br>毎月開講しています</p>
+                </h2>
+                <p class="font-normal text-sm md:text-base text-center md:text-start">新入社員の方が増えたタイミングで<br class="md:hidden">すぐにご利用いただけます</p>
+              </div>
+              <div class="flex flex-col gap-10 items-center">
+                <div class="font-normal flex flex-col gap-3 items-center">
+                  <p class="text-lg md:text-xl font-semibold">まずは料金の詳細をダウンロード！</p>
+                  <p class="font-normal text-sm md:text-base">（お問い合わせもこちらから）</p>
+                </div>
+                <a href="https://uzuz-college.jp/contact-biz/" target="_blank">
+                  <button class="w-full w-[350px] py-6 pl-20 pr-5 flex items-center justify-between bg-white rounded-full">
+                    <p class="text-secondary text-xl">料金表ダウンロード</p>
+                    <img src="img/arrow2.svg" alt="">
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 流れ -->
+        <section class="bg-white">
+          <div class="max-w-7xl mx-auto px-5 py-16 flex flex-col items-center">
+            <h2 class="mb-10 md:mb-14 flex flex-col items-center">
+              <div class="p-0.5 bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                <p class="font-second font-bold italic">Flow</p>
+              </div>
+              <p class="mt-2 text-2xl sm:text-3xl text-center  leading-relaxed sm:leading-relaxed">ご利用の流れ</p>
+            </h2>
+            <div class="flex flex-col md:flex-row md:grid grid-cols-4 gap-7">
+              <div class="flex flex-col items-start gap-4">
+                <img src="img/flow1.png" class="w-full hidden md:block" alt="">
+                <div class="w-full flex flex-col gap-1">
+                  <div class="bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                    <p class="font-second font-bold italic">Step 1</p>
+                  </div>
+                  <p class="text-lg sm:text-xl mb-3 md:mb-0">料金表ダウンロード</p>
+                  <img src="img/flow1.png" class="w-full md:hidden" alt="">
+                </div>
+                <p class="text-sm font-normal leading-relaxed">このページの料金表ダウンロードボタンより、料金表をダウンロードください。ご不明点やご要望がございました際には、フォームの備考欄へ内容をご記載くださいませ。</p>
+              </div>
+              <div class="flex flex-col items-start gap-4">
+                <img src="img/flow2.png" class="w-full hidden md:block" alt="">
+                <div class="w-full flex flex-col gap-1">
+                  <div class="bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                    <p class="font-second font-bold italic">Step 2</p>
+                  </div>
+                  <p class="text-lg sm:text-xl mb-3 md:mb-0">ご要望のヒアリング</p>
+                  <img src="img/flow2.png" class="w-full md:hidden" alt="">
+                </div>
+                <p class="text-sm font-normal leading-relaxed">研修プログラムにご興味を持っていただけた際には、オンラインにてお打ち合わせを実施します。貴社のご要望をお伺いさせていただきながら、ご意向に沿った研修プログラムをご提案します。</p>
+              </div>
+              <div class="flex flex-col items-start gap-4">
+                <img src="img/flow3.png" class="w-full hidden md:block" alt="">
+                <div class="w-full flex flex-col gap-1">
+                  <div class="bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                    <p class="font-second font-bold italic">Step 3</p>
+                  </div>
+                  <p class="text-lg sm:text-xl mb-3 md:mb-0">お申し込み</p>
+                  <img src="img/flow3.png" class="w-full md:hidden" alt="">
+                </div>
+                <p class="text-sm font-normal leading-relaxed">研修の導入をご希望いただけた際には、ご契約書のお取り交わしを実施します。</p>
+              </div>
+              <div class="flex flex-col items-start gap-4">
+                <img src="img/flow4.png" class="w-full hidden md:block" alt="">
+                <div class="w-full flex flex-col gap-1">
+                  <div class="bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                    <p class="font-second font-bold italic">Step 4</p>
+                  </div>
+                  <p class="text-lg sm:text-xl mb-3 md:mb-0">研修スタート</p>
+                  <img src="img/flow4.png" class="w-full md:hidden" alt="">
+                </div>
+                <p class="text-sm font-normal leading-relaxed">研修プログラムを開始します。研修期間中も、お気になられる点があればいつでも担当までご相談いただけます。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 質問 -->
+        <section class="bg-gray-second">
+          <div class="max-w-4xl mx-auto px-5 py-16 flex flex-col items-center">
+            <h2 class="mb-10 md:mb-14 flex flex-col items-center">
+              <div class="p-0.5 bg-gradient-to-r from-blue to-blue-second text-transparent bg-clip-text">
+                <p class="font-second font-bold italic">FAQ</p>
+              </div>
+              <p class="mt-2 text-2xl sm:text-3xl text-center  leading-relaxed sm:leading-relaxed">よくある質問</p>
+            </h2>
+            <ul class="w-full flex flex-col gap-3">
+              <li class="bg-white p-7 flex flex-col gap-3">
+                <div class="flex gap-2.5">
+                  <img src="img/q.svg" alt="">
+                  <p class="text-base">全国どこからでも受講できますか？</p>
+                </div>
+                <p class="text-sm font-normal leading-relaxed">はい。オンライン研修のため、全国どこからでも受講いただけます。</p>
+              </li>
+              <li class="bg-white p-7 flex flex-col gap-3">
+                <div class="flex gap-2.5">
+                  <img src="img/q.svg" alt="">
+                  <p class="text-base">受講にあたって用意しなければならないものはありますか？</p>
+                </div>
+                <p class="text-sm font-normal leading-relaxed">パソコンとインターネット環境があれば、他にご用意いただく必要はありません。</p>
+              </li>
+              <li class="bg-white p-7 flex flex-col gap-3">
+                <div class="flex gap-2.5">
+                  <img src="img/q.svg" alt="">
+                  <p class="text-base">なぜこんなに受講費用が安いのでしょうか？</p>
+                </div>
+                <p class="text-sm font-normal leading-relaxed">完全オンラインの研修プログラムにすることで費用を抑えています。<br>また、複数の社労士事務所と提携し、社労士費用も当社で負担できる体制をとっています。<br>研修内容には自信がありますので、安心してご利用ください。</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- CTA -->
+        <section class="relative bg-gradient-to-r from-blue to-blue-second">
+          <div class="flex flex-col items-center">
+            <img src="img/kantan.svg" class="hidden sm:block absolute top-12 sm:right-20 lg:right-40 xl:right-80" alt="">
+            <div class="max-w-xl mx-auto px-4 py-16 flex flex-col items-center">
+              <img src="img/kantan.svg" class="sm:hidden mb-5" alt="">
+              <h2 class="mb-8 flex flex-col items-center text-white">
+                <p class="font-second font-bold italic opacity-50">Download</p>
+                <p class="mt-2 text-2xl sm:text-3xl text-center leading-relaxed sm:leading-relaxed tracking-tighter">まずは料金の詳細をダウンロード</p>
+              </h2>
+              <div class="flex flex-col gap-7 items-center">
+                <a href="https://uzuz-college.jp/contact-biz/" target="_blank">
+                  <button class="w-full w-[350px] py-6 pl-20 pr-5 flex items-center justify-between bg-white rounded-full">
+                    <p class="text-secondary text-xl">料金表ダウンロード</p>
+                    <img src="img/arrow2.svg" alt="">
+                  </button>
+                </a>
+                <p class="font-normal text-sm md:text-base text-white text-center">※フォーム送信後、登録メールアドレスへ<br class="md:hidden">「料金表URL」が送信されます</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- フッター -->
+        <footer class="w-full">
+          <div class="bg-white py-11 flex flex-col justify-center items-center">
+            <img src="img/footer.png" class="w-[100px] md:h-[34px]" alt="">
+          </div>
+          <small class="py-1 w-full bg-secondary text-white text-xs font-light flex justify-center items-center">
+            COPYRIGHTS 2023 UZUZ, INC.
+          </small>
+        </footer>
+      </main>
+      <!-- 追尾CTA -->
+      <div x-data="{ scrolled: false }" x-init="window.onscroll = () => { scrolled = window.scrollY > 500 }" class="fixed z-50 bottom-4 right-4 duration-300 hover:opacity-80">
+        <div x-show="scrolled" style="display: none;">
+          <a href="https://uzuz-college.jp/contact-biz/" target="_blank">
+            <img src="img/cta_sticky.svg" class="w-[110px] sm:w-[200px] sticky flex justify-end" alt="">
+          </a>
         </div>
-    </header>
-    <section class="h-screen bg-blue-200">
-        <div class="max-w-6xl mx-auto px-5 flex jusitfy-center items-center h-full">
-            <div>
-                <h1 class="text-5xl font-bold">メインコピー</h1>
-            </div>
-        </div>
+      </div>
     </section>
-    <footer class="max-w-7xl mx-auto py-10 px-5 bg-gray-600 text-white">
-        <ul>
-            <li>aaaaaaaaaaaaaa</li>
-            <li>aaaaaaaaaaaaaa</li>
-            <li>aaaaaaaaaaaaaa</li>
-            <li>aaaaaaaaaaaaaa</li>
-        </ul>
-    </footer>
-</body>
+  </body>
 </html>
