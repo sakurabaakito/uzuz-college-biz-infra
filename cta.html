@@ -1,0 +1,8 @@
+<!-- 追尾CTA -->
+<div x-data="{ scrolled: false }" x-init="window.onscroll = () => { scrolled = window.scrollY > 500 }" class="fixed z-50 bottom-4 right-4 duration-300 hover:opacity-80">
+    <div x-show="scrolled" style="display: none;">
+      <a href="https://uzuz-college.jp/contact-biz/" target="_blank">
+        <img src="img/cta_sticky.svg" class="w-[110px] sm:w-[200px] sticky flex justify-end" alt="">
+      </a>
+    </div>
+</div>
